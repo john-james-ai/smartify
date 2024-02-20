@@ -1,0 +1,15 @@
+{
+		"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {	
+    	"psi-header.variables": [
+			["projectCreationYear", "2022"],
+			["url", "https://github.com/john-james-ai/tensorflow-deep-learning"],
+			["projectname", "Deep Learning with Tensorflow"],
+			["version", "0.1.0"]
+		],
+	}
+}
