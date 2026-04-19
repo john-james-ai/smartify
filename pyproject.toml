@@ -1,0 +1,123 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "sciven"
+version = "0.1.0"
+description = "A Venture Development Framework (VDF) for GenAI opportunity discovery."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.14"
+authors = [
+    { name = "John James", email = "john.james.ai.studio@gmail.com" },
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.14",
+]
+dependencies = [
+    "langgraph>=0.4",
+    "langgraph-store-postgres>=0.1",
+    "langchain-openai>=0.3",
+    "numpy>=2.0",
+    "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=6.0",
+    "pytest-asyncio>=0.24",
+    "ruff>=0.11",
+    "mypy>=1.15",
+    "pre-commit>=4.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/sciven-centre/sciven"
+Repository = "https://github.com/sciven-centre/sciven"
+
+# --------------------------------------------------------------------------- #
+#                                    Ruff                                      #
+# --------------------------------------------------------------------------- #
+[tool.ruff]
+target-version = "py314"
+line-length = 100
+
+[tool.ruff.lint]
+select = [
+    "E",    # pycodestyle errors
+    "W",    # pycodestyle warnings
+    "F",    # pyflakes
+    "I",    # isort
+    "UP",   # pyupgrade
+    "D",    # pydocstyle
+    "B",    # flake8-bugbear
+    "SIM",  # flake8-simplify
+    "RUF",  # ruff-specific rules
+]
+ignore = [
+    "D100",  # missing docstring in public module
+    "D104",  # missing docstring in public package
+    "D107",  # missing docstring in __init__ method
+    "I001",  # imports not sorted on jupyter files.
+    "D103",  # missing docstring in function
+    "E501",  # line too long
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.format]
+quote-style = "double"
+
+# --------------------------------------------------------------------------- #
+#                                   Mypy                                      #
+# --------------------------------------------------------------------------- #
+[tool.mypy]
+python_version = "3.14"
+strict = true
+ignore_missing_imports = true
+show_error_codes = true
+warn_unreachable = true
+
+# --------------------------------------------------------------------------- #
+#                                  Pytest                                     #
+# --------------------------------------------------------------------------- #
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = """\
+    --cov sciven \
+    --cov tests \
+    --cov-report term-missing \
+    --no-cov-on-fail \
+"""
+
+asyncio_mode = "auto"
+filterwarnings = [
+    "ignore::pytest.PytestCollectionWarning",
+    "ignore::pytest.PytestUnknownMarkWarning",
+    "ignore::UserWarning",
+    "ignore::DeprecationWarning",
+]
+
+[tool.coverage.run]
+source = ["sciven"]
+branch = true
+omit=["tests/*"]
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 50
+
+[coverage.paths]
+source = "sciven"
+
+# --------------------------------------------------------------------------- #
+#                                    Ruff                                     #
+# --------------------------------------------------------------------------- #
+[tool.ruff.lint.per-file-ignores]
+# Ignore all pydocstyle (D) rules for any file in the tests directory
+"tests/*.py" = ["D"]
