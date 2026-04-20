@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+    ],
+    "settings": {
+        "psi-header.variables": [
+        ["projectCreationYear", "2026"],
+        ["version", "0.1.0"],
+        ["url", "https://github.com/john-james-ai/smartify"],
+        ["projectname", "Smartify"],        
+        ["pythonversion","3.14.3"],
+        ["language", "Python"],
+        ["projectdescription", "Deep Learning and Generative AI Smartify Lab"],
+        ]
+    }
+}
