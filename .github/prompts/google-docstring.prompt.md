@@ -10,13 +10,15 @@ Requirements:
 - Preserve existing behavior and avoid unrelated refactors.
 - For classes, include constructor arguments in the class docstring under `Args:` when the constructor defines the initialization contract.
 - Do not add a docstring to `__init__` when the constructor contract is already documented on the class.
-- Include `Attributes:` in class docstrings only for meaningful public instance attributes.
+- Include `Attributes:` in class docstrings for dataclasses.
+- Include `Attributes:` in class docstrings for non-dataclasses when the class has public attributes that are not documented in the constructor or elsewhere.
 - Include `Args:`, `Returns:`, `Yields:`, and `Raises:` sections where they apply.
-- Keep private helpers undocumented unless the file already documents them consistently or the task specifically requires it.
+- Document private methods with a single line description under the method signature.
 - Do not document private attributes in `Attributes:` sections.
 - Match the repository's existing style and linter expectations.
 - Clean up any docstring-related whitespace or formatting issues introduced during the edit.
 - Validate the edited file and fix any diagnostics caused by the change.
+
 
 When responding:
 - Make the code changes directly.

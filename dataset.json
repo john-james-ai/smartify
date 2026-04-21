@@ -1,0 +1,14 @@
+[
+  {
+    "task": "Parse an AWS S3 bucket name from a full S3 URI like 's3://my-bucket-name/path/to/object'",
+    "format": "regex"
+  },
+  {
+    "task": "Create a JSON CloudFormation template for an AWS Lambda function with basic execution role",
+    "format": "json"
+  },
+  {
+    "task": "Write a Python function that converts an AWS IAM policy JSON string into a human-readable format by extracting the Effect, Action, and Resource fields",
+    "format": "python"
+  }
+]
