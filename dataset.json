@@ -1,14 +1,18 @@
 [
   {
-    "task": "Parse an AWS S3 bucket name from a full S3 URI like 's3://my-bucket-name/path/to/object'",
-    "format": "regex"
-  },
-  {
-    "task": "Create a JSON CloudFormation template for an AWS Lambda function with basic execution role",
-    "format": "json"
-  },
-  {
-    "task": "Write a Python function that converts an AWS IAM policy JSON string into a human-readable format by extracting the Effect, Action, and Resource fields",
-    "format": "python"
+    "prompt_inputs": {
+      "height": "180 cm",
+      "weight": "72 kg",
+      "goal": "Marathon training - maximize carbohydrate intake with proper timing around a 2-hour morning run, maintain hydration and electrolyte balance",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Meal plan covers all meals and snacks for one full day with specific timing around the 2-hour morning training session",
+      "Total daily carbohydrate intake supports high-endurance training (approximately 8-10g per kg body weight)",
+      "Includes pre-run, during-run, and post-run nutrition with appropriate timing and composition",
+      "Incorporates hydration and electrolyte strategies throughout the day"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a high-endurance athlete (marathon runner) requiring high carbohydrate intake and specific timing around training sessions, including hydration and electrolyte considerations"
   }
 ]

@@ -1,0 +1,23 @@
+[
+  {
+    "output": "# One-Day Marathon Training Meal Plan\n\nHere is a one-day meal plan for an athlete training for a marathon with optimized carbohydrate timing around a 2-hour morning run:\n\n* **Calorie Target:** Approximately 3,200 calories\n* **Macronutrient Breakdown:** Protein (120g), Fat (80g), Carbs (480g)\n\n**Meal Plan:**\n\n* **Pre-Run Snack (5:30 AM - 30 minutes before 6:00 AM run):** Banana (120g) with honey (20g) and white bread (40g).\n  * Protein: 4g, Fat: 1g, Carbs: 55g\n\n* **Post-Run Recovery (8:15 AM - within 30 minutes of finishing):** Chocolate milk (500g) with a bagel (90g) and almond butter (20g).\n  * Protein: 20g, Fat: 10g, Carbs: 90g\n\n* **Breakfast (9:30 AM):** Oatmeal (100g dry weight) cooked with whole milk (240g), blueberries (150g), and granola (40g). Orange juice (250ml).\n  * Protein: 18g, Fat: 12g, Carbs: 95g\n\n* **Mid-Morning Snack (12:00 PM):** Rice cakes (50g) with peanut butter (30g) and banana (100g).\n  * Protein: 12g, Fat: 16g, Carbs: 55g\n\n* **Lunch (1:30 PM):** Grilled chicken breast (140g), jasmine rice (180g cooked), steamed carrots (150g), and olive oil drizzle (10ml).\n  * Protein: 38g, Fat: 12g, Carbs: 75g\n\n* **Afternoon Snack (4:00 PM):** Greek yogurt (200g) with honey (15g), granola (30g), and strawberries (100g).\n  * Protein: 18g, Fat: 8g, Carbs: 60g\n\n* **Dinner (6:30 PM):** Baked salmon (130g), sweet potato (250g), steamed broccoli (200g), and sesame oil (10ml).\n  * Protein: 28g, Fat: 15g, Carbs: 75g\n\n* **Evening Hydration (8:00 PM):** Sports drink with electrolytes (500ml) and a handful of pretzels (30g).\n  * Protein: 2g, Fat: 1g, Carbs: 40g\n\n**Hydration Notes:** Drink water throughout the day (at least 3-4 liters), with electrolyte-enhanced beverages during and after the morning run to support recovery and maintain electrolyte balance for endurance training.\n\nThis meal plan prioritizes easily digestible carbohydrates strategically timed around your training run, supports muscle recovery with adequate protein, and maintains proper hydration for marathon preparation.",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "180 cm",
+        "weight": "72 kg",
+        "goal": "Marathon training - maximize carbohydrate intake with proper timing around a 2-hour morning run, maintain hydration and electrolyte balance",
+        "restrictions": "None"
+      },
+      "solution_criteria": [
+        "Meal plan covers all meals and snacks for one full day with specific timing around the 2-hour morning training session",
+        "Total daily carbohydrate intake supports high-endurance training (approximately 8-10g per kg body weight)",
+        "Includes pre-run, during-run, and post-run nutrition with appropriate timing and composition",
+        "Incorporates hydration and electrolyte strategies throughout the day"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+      "scenario": "Testing with a high-endurance athlete (marathon runner) requiring high carbohydrate intake and specific timing around training sessions, including hydration and electrolyte considerations"
+    },
+    "score": 6,
+    "reasoning": "The solution meets all three mandatory requirements with clear presentation of daily calories, macronutrient breakdown, and detailed meal timing. It demonstrates strong understanding of post-run recovery nutrition and hydration strategy. However, it has a critical gap in during-run fueling for a 2-hour training session, which is essential for marathon training. Additionally, the total carbohydrate intake (480g) falls short of the stated goal range of 8-10g/kg body weight. These are significant deficiencies for an endurance athlete's meal plan, though the mandatory requirements are technically satisfied."
+  }
+]
