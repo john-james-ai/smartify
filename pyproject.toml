@@ -20,6 +20,9 @@ classifiers = [
 dependencies = [
     "numpy>=2.0",
     "python-dotenv>=1.0",
+    "langchain-openai",
+    "langchain-anthropic",
+    "langgraph",
 ]
 
 [project.optional-dependencies]
